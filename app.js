@@ -11,7 +11,7 @@ app.use(express.json());
 
 // app.use('/api/users', userRoutes);
 app.get("/custom-healthcheck", (req, res) => {
-    res.send("Service is running successfully :)");
+    res.send("Service is running successfully");
   });
 
 const PORT = process.env.PORT || 5000;
