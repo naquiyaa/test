@@ -14,6 +14,10 @@ app.get("/custom-healthcheck", (req, res) => {
     res.send("Service is running successfully");
   });
 
+app.get("/test", (req, res) => {
+    res.send("This is the test route");
+  });
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
